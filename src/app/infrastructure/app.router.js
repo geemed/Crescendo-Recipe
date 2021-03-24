@@ -2,7 +2,7 @@ import React from "react";
 import { Router, Route } from "react-router-dom";
 
 import History from "./app.history";
-import { Home, Recipe } from "app-component";
+import { Home, Recipe, RecipeItem } from "app-component";
 
 const Routes = () => {
   return (
@@ -10,6 +10,9 @@ const Routes = () => {
       <Home>
         <Route path="/" exact>
           <Recipe />
+        </Route>
+        <Route path="/:uuid" exact>
+          <RecipeItem />
         </Route>
       </Home>
     </Router>

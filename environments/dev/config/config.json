@@ -1,5 +1,5 @@
 {
   "env": "dev",
-  "baseApi": "",
+  "baseApi": "http://localhost:3001/",
   "apiVersion": "v1"
 }
